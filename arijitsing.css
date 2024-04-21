@@ -1,0 +1,181 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Ubuntu', sans-serif; /* Set default font family */
+    background-color: #f0f0f0; /* Set default background color */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Default text color */
+}
+
+a {
+    color: #ffffff; /* Anchor text color */
+    font-family: Arial, sans-serif; /* Anchor font family */
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: #000000; /* Navbar background color */
+    color: rgb(255, 255, 255); /* Navbar text color */
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/* Container */
+.container {
+    min-height: 72vh;
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 90%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('playlist/Arijit\ sing.jpeg'); /* Background image */
+}
+
+/* Bottom Section */
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: #000000; /* Bottom section background color */
+    color: #ffffff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+/* Song List Container */
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: #ffffff; /* Song item background color */
+    color: #000000; /* Dark text color */
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Playlist Box Styles */
+.playlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.playlist-box {
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #000000; /* Playlist box background color */
+    color: #ffffff; /* Playlist box text color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.playlist-box:hover {
+    transform: translateY(-5px);
+}
+
+.playlist-box a{
+    color: #ffffff; /* Anchor text color */
+    text-decoration: none;
+}
+
+.playlist-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.playlist-box h2 {
+    font-size: 18px;
+    margin: 0;
+}

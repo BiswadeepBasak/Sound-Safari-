@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arijit Singh Playlist</title>
+    <!-- Link to your external CSS file -->
+    
+    <link rel="stylesheet" href="atifislam.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Link back to the index page -->
+            <li><a href="index.html">Back to Home</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <h1>Atif Islam Playlist</h1>
+    <input type="text" id="searchBox" placeholder="Search for a song...">
+    
+    
+    <!-- Your Arijit Singh playlist content goes here -->
+    <div class="songItemContainer">
+        <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Addat</span>
+                    <span class="songlistplay"><span class="timestamp">05:37 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Barish</span>
+                    <span class="songlistplay"><span class="timestamp">05:36 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Dil na jan</span>
+                    <span class="songlistplay"><span class="timestamp">03:50<i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Gulabi Akhain</span>
+                    <span class="songlistplay"><span class="timestamp">02:48 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Jana De</span>
+                    <span class="songlistplay"><span class="timestamp">04:58<i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Musafir </span>
+                    <span class="songlistplay"><span class="timestamp">05:10 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Pehali Dafa</span>
+                    <span class="songlistplay"><span class="timestamp">04:57 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Rabba</span>
+                    <span class="songlistplay"><span class="timestamp">07:49 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Tera Sang Yara</span>
+                    <span class="songlistplay"><span class="timestamp">04:49 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Tu jana na</span>
+                    <span class="songlistplay"><span class="timestamp">05:41 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <!-- Song items will be dynamically added here -->
+    </div>
+
+    <!-- Audio controls -->
+    <div class="audio-controls">
+        <div class="play-controls">
+            <i class="fas fa-step-backward" id="previous"></i>
+            <i class="far fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-step-forward" id="next"></i>
+        </div>
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif">
+            <span id="masterSongName">Addat</span>
+        </div>
+    </div>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="atifislam.js"></script>
+    <script src="atifislam.js"></script>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+<script>
+    // JavaScript code for search functionality
+    const searchBox = document.getElementById('searchBox');
+    const songItems = document.querySelectorAll('.songItem');
+
+    searchBox.addEventListener('input', function() {
+        const searchTerm = searchBox.value.toLowerCase();
+
+        songItems.forEach(function(item) {
+            const songName = item.querySelector('.songName').textContent.toLowerCase();
+
+            if (songName.includes(searchTerm)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+</script>
+</body>
+</html>

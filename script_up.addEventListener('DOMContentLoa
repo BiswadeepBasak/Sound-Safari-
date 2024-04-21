@@ -1,0 +1,31 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('signupForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById('name').value;
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const email = document.getElementById('email').value;
+        const mobile = document.getElementById('mobile').value;
+        const dob = document.getElementById('dob').value;
+        const gender = document.getElementById('gender').value;
+
+        // Perform form validation here
+        // For example, you can check if the fields are not empty
+
+        // After validation, you can send the data to the server for processing
+        // Here, we'll simply log the form data
+        console.log('Name:', name);
+        console.log('Username:', username);
+        console.log('Password:', password);
+        console.log('Email:', email);
+        console.log('Mobile Number:', mobile);
+        console.log('Date of Birth:', dob);
+        console.log('Gender:', gender);
+
+        // You can then redirect the user to another page or perform additional actions
+    });
+});

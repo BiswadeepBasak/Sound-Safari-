@@ -1,0 +1,117 @@
+/* style_premium.css */
+*{
+    padding : 0;
+    margin : 0;
+    text-decoration : none;
+}
+a{
+     color : #000000;
+     font-family : arial;
+}
+/* style_premium.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img {
+    height: 30px;
+    width: auto;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.page {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.subscription-plan {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-plan h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subscription-plan p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.subscription-plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.subscription-plan ul li {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #198642;
+}
+
+@media screen and (max-width: 768px) {
+    .subscription-plan {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .subscription-plan {
+        width: calc(100% - 20px);
+    }
+}

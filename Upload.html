@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Upload</title>
+    <link rel="stylesheet" href="style_uplod.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page" id="song-upload">
+            <h1>Upload a Song</h1>
+            <form>
+                <input type="text" name="songName" placeholder="Song Name" required><br>
+                <input type="text" name="artistName" placeholder="Artist Name" required><br>
+                <select name="language" required>
+                    <option value="" disabled selected>Select Language</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="english">English</option>
+                    <option value="bengali">Bengali</option>
+                </select><br>
+                <input type="text" name="songType" placeholder="Song Type" required><br>
+                <select name="songBelong" required>
+                    <option value="" disabled selected>Song Belongs To</option>
+                    <option value="hollywood">Hollywood</option>
+                    <option value="bollywood">Bollywood</option>
+                    <option value="tollywood">Tollywood</option>
+                </select><br>
+                <textarea name="lyrics" placeholder="Song Lyrics" required></textarea><br>
+                <input type="file" name="songFile" accept="audio/*" required><br>
+                <button type="submit">Upload Song</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
